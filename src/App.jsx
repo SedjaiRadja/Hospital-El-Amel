@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <div className="absolute inset-0 z-0 mt-50">
+      <div className="absolute inset-0 z-0">
         <LightRays
           raysOrigin="top-center"
           raysColor="#cfe9f0"
