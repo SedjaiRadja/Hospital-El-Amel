@@ -1,6 +1,9 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import LightRays from "./components/LightRays";
-import NavBar from "./components/NavBar";
+import Home from "./pages/home/Home";
+import ContactPage from "./pages/contact/ContactPage";
+
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -22,7 +25,10 @@ function App() {
         />
       </div>
       <div className="relative z-10">
-        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </div>
     </div>
   );

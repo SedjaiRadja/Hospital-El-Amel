@@ -6,7 +6,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white/200 text-3xl backdrop-blur-sm border-b border-slate-200 shadow-sm">
+    <nav className="relative z-50 bg-white/200 text-3xl backdrop-blur-sm border-b border-slate-200 shadow-sm">
       <div className="mx-auto flex w-full max-w-[1400px] lg:max-w-none flex-wrap items-center justify-around gap-4 px-6 py-4 lg:px-12 lg:py-5">
         <div className="flex items-center gap-3">
           <img
@@ -74,8 +74,12 @@ function NavBar() {
         </div>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} lg:hidden px-6 pb-4`}>
-        <div className="space-y-2 rounded-3xl bg-white/95 p-4 shadow-lg ring-1 ring-slate-200">
+      <div className={`${isOpen ? "fixed" : "hidden"} inset-0 z-50 lg:hidden`}>
+        <div
+          className="absolute inset-0 bg-slate-900/40"
+          onClick={() => setIsOpen(false)}
+        />
+        <div className="relative mx-6 mt-[84px] max-h-[calc(100vh-84px)] overflow-auto rounded-3xl bg-white/98 p-4 shadow-2xl ring-1 ring-slate-200">
           <Link
             to="/"
             onClick={() => setIsOpen(false)}
