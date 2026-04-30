@@ -65,6 +65,9 @@ function NavBar() {
           <Link to="/doctors" className="transition hover:text-slate-600">
             Doctors
           </Link>
+          <Link to="/appointment" className="transition hover:text-slate-600">
+            Appointment
+          </Link>
           <Link to="/about" className="transition hover:text-slate-600">
             About
           </Link>
@@ -100,6 +103,13 @@ function NavBar() {
             className="block rounded-xl px-4 py-3 text-slate-900 text-base font-medium transition hover:bg-slate-50"
           >
             Doctors
+          </Link>
+          <Link
+            to="/appointment"
+            onClick={() => setIsOpen(false)}
+            className="block rounded-xl px-4 py-3 text-slate-900 text-base font-medium transition hover:bg-slate-50"
+          >
+            Appointment
           </Link>
           <Link
             to="/about"
