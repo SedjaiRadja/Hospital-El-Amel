@@ -19,19 +19,29 @@ const iconMap = {
 
 function Cards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
-      {headerCards.map((card) => (
-        <div
-          key={card.id}
-          className="bg-sky-50 rounded-xl shadow-md p-6 hover:shadow-[0_0_20px_#0ea5e9] transition"
-        >
-          <div className="text-blue-600 mb-3">{iconMap[card.icon]}</div>
+    <div>
+      <div className="flex ml-15 items-center gap-2 m-10">
+        <div className="w-10 h-[2px] bg-red-900 mt-0"></div>
+        <h1 className="text-black text-2xl sm:text-3xl font-bold">
+          Why Choose Us ?
+        </h1>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 p-6 ">
+        {headerCards.map((card) => (
+          <div
+            key={card.id}
+            className="bg-sky-50 rounded-xl shadow-md p-6 hover:shadow-[0_0_20px_#0ea5e9] transition flex flex-col "
+          >
+            <div className="text-blue-600 mb-3">{iconMap[card.icon]}</div>
 
-          <h3 className="text-lg font-semibold text-slate-900">{card.title}</h3>
+            <h3 className="text-lg font-semibold text-slate-900">
+              {card.title}
+            </h3>
 
-          <p className="text-sm text-slate-600 mt-2">{card.description}</p>
-        </div>
-      ))}
+            <p className="text-sm text-slate-600 mt-2">{card.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

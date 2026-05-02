@@ -2,9 +2,9 @@ import doctors from "@/data/doctors";
 function Doctors() {
   return (
     <div>
-      <div className="flex ml-15 items-center gap-2 mb-5">
+      <div className="flex ml-15 items-center gap-2 m-10">
         <div className="w-10 h-[2px] bg-red-900 mt-0"></div>
-        <h1 className="text-teal-900 text-xl sm:text-3xl font-bold">
+        <h1 className="text-black text-2xl sm:text-3xl font-bold">
           Our Doctors
         </h1>
       </div>
