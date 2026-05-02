@@ -12,9 +12,16 @@ const doctors = [
     image: doctor1,
     dateOfBirth: "1987-10-21",
     specialty: "Cardiology",
-    email: "sedjai.radja@hospital.com",
-    phone: "+213-555-0101",
     experienceYears: 12,
+    bio: "Cardiologist specialized in interventional cardiology with over 12 years of experience treating cardiovascular diseases.",
+    address: "Algiers, Algeria",
+    availability: "Sunday - Thursday | 09:00 - 17:00",
+    education: "MD in Cardiology - University of Algiers",
+    certifications: [
+      "European Society of Cardiology Certification",
+      "Advanced Cardiac Life Support (ACLS)",
+    ],
+    rating: 4.9,
   },
   {
     id: 2,
@@ -27,6 +34,14 @@ const doctors = [
     email: "hamadi.naima@hospital.com",
     phone: "+213-555-0102",
     experienceYears: 8,
+
+    bio: "Pediatrician focused on child health, growth monitoring, and preventive care.",
+    address: "Oran, Algeria",
+    languages: ["Arabic", "French"],
+    availability: "Saturday - Wednesday | 08:30 - 16:30",
+    education: "MD in Pediatrics - University of Oran",
+    certifications: ["Pediatric Advanced Life Support (PALS)"],
+    rating: 4.6,
   },
   {
     id: 3,
@@ -35,10 +50,18 @@ const doctors = [
     fullName: "Khouane Alaa",
     image: doctor3,
     dateOfBirth: "1980-04-08",
-    specialty: "dentistry",
+    specialty: "Dentistry",
     email: "khouane.alaa@hospital.com",
     phone: "+213-555-0103",
     experienceYears: 10,
+
+    bio: "Dentist specializing in restorative and cosmetic dentistry.",
+    address: "Constantine, Algeria",
+    languages: ["Arabic", "French"],
+    availability: "Sunday - Thursday | 10:00 - 18:00",
+    education: "DDS - University of Constantine",
+    certifications: ["Cosmetic Dentistry Certification"],
+    rating: 4.7,
   },
   {
     id: 4,
@@ -51,6 +74,14 @@ const doctors = [
     email: "abbou.fatima@hospital.com",
     phone: "+213-555-0104",
     experienceYears: 6,
+
+    bio: "Gynecologist specialized in women's reproductive health and prenatal care.",
+    address: "Blida, Algeria",
+    languages: ["Arabic", "French"],
+    availability: "Saturday - Wednesday | 09:00 - 15:00",
+    education: "MD in Gynecology - University of Blida",
+    certifications: ["Obstetrics & Gynecology Board Certification"],
+    rating: 4.5,
   },
   {
     id: 5,
@@ -63,6 +94,14 @@ const doctors = [
     email: "mebtoul.imane@hospital.com",
     phone: "+213-555-0105",
     experienceYears: 11,
+
+    bio: "Neurologist with expertise in brain disorders and neurodegenerative diseases.",
+    address: "Algiers, Algeria",
+    languages: ["Arabic", "French", "English"],
+    availability: "Sunday - Thursday | 08:00 - 16:00",
+    education: "MD in Neurology - University of Algiers",
+    certifications: ["Neurodiagnostic Certification"],
+    rating: 4.9,
   },
 ];
 

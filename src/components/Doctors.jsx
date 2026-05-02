@@ -1,5 +1,6 @@
 import doctors from "@/data/doctors";
-function Doctors() {
+import { Link } from "react-router-dom";
+function Doctors({ showButton = false }) {
   return (
     <div>
       <div className="flex ml-15 items-center gap-2 m-10">
@@ -31,6 +32,13 @@ function Doctors() {
                 <p className="text-sm text-slate-600">
                   Experience: {doctor.experienceYears} years
                 </p>
+                {showButton && (
+                  <Link to={`/doctors/${doctor.id}`}>
+                    <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+                      View Profile
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

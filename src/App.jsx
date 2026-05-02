@@ -1,8 +1,11 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LightRays from "./components/LightRays";
+import NavBar from "./components/NavBar";
 import Home from "./pages/home/Home";
 import ContactPage from "./pages/contact/ContactPage";
+import DoctorsPage from "./pages/doctors/DoctorsPage";
+import DoctorsDetails from "./pages/doctors/DoctorsDetails";
 
 function App() {
   return (
@@ -25,8 +28,11 @@ function App() {
         />
       </div>
       <div className="relative z-10">
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/doctors" element={<DoctorsPage />} />
+          <Route path="/doctors/:id" element={<DoctorsDetails />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
