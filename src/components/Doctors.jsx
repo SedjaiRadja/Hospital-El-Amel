@@ -2,13 +2,7 @@ import doctors from "@/data/doctors";
 import { Link } from "react-router-dom";
 function Doctors({ showButton = false }) {
   return (
-    <div>
-      <div className="flex ml-15 items-center gap-2 m-10">
-        <div className="w-10 h-[2px] bg-red-900 mt-0"></div>
-        <h1 className="text-black text-2xl sm:text-3xl font-bold">
-          Our Doctors
-        </h1>
-      </div>
+    <div className="mb-10">
       <div className="grid gap-6 lg:grid-cols-3">
         {doctors.map((doctor) => (
           <div
@@ -34,7 +28,7 @@ function Doctors({ showButton = false }) {
                 </p>
                 {showButton && (
                   <Link to={`/doctors/${doctor.id}`}>
-                    <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+                    <button className="mt-4 bg-teal-900 text-white px-4 py-2 rounded hover:bg-teal-700 transition">
                       View Profile
                     </button>
                   </Link>

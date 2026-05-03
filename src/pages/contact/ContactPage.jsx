@@ -1,10 +1,13 @@
+import Footer from "@/components/Footer";
 import ContactForm from "../../components/ContactForm";
-import NavBar from "@/components/NavBar";
 function ContactPage() {
   return (
-    <div>
-      <NavBar />
-      <ContactForm />
+    <div className="min-h-screen flex flex-col">
+      <main className="flex-grow">
+        <ContactForm />
+      </main>
+
+      <Footer />
     </div>
   );
 }

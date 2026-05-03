@@ -86,7 +86,7 @@ function DoctorsDetails() {
           <span className="text-gray-600">{doctor.rating}</span>
         </div>
         <Link to={"/doctors"}>
-          <button className="mt-4 bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600 transition ">
+          <button className="mt-4 bg-teal-900 text-white px-4 py-2 rounded hover:bg-teal-700 transition ">
             go back
           </button>
         </Link>

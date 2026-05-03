@@ -9,12 +9,15 @@ function NavBar() {
     <nav className="relative z-50 bg-white/200 text-3xl backdrop-blur-sm border-b border-slate-200 shadow-sm">
       <div className="mx-auto flex w-full max-w-[1400px] lg:max-w-none flex-wrap items-center justify-around gap-4 px-6 py-4 lg:px-12 lg:py-5">
         <div className="flex items-center gap-3">
-          <img
-            src={logo}
-            alt="Hospital Logo"
-            className="h-12 w-auto rounded-md shadow-sm lg:h-16"
-          />
-          <div>
+          <Link to="/">
+            <img
+              src={logo}
+              alt="Hospital Logo"
+              className="h-12 w-auto rounded-md shadow-sm lg:h-16"
+            />
+          </Link>
+
+          <div className="flex flex-col">
             <p className="text-2xl font-semibold text-slate-900 lg:text-3xl">
               Hospital El-Amel
             </p>
