@@ -2,7 +2,7 @@ import doctors from "@/data/doctors";
 import { Link } from "react-router-dom";
 function Doctors({ showButton = false }) {
   return (
-    <div className="mb-10">
+    <div data-aos="fade-up" className="mb-10">
       <div className="grid gap-6 lg:grid-cols-3">
         {doctors.map((doctor) => (
           <div

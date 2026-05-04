@@ -1,5 +1,8 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Routes, Route, useLocation } from "react-router-dom";
 import LightRays from "./components/LightRays";
 import NavBar from "./components/NavBar";
 import Home from "./pages/home/Home";
@@ -10,6 +13,20 @@ import AppointmentPage from "./pages/appointment/AppointmentPage";
 import AboutPage from "./pages/about/AboutPage";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [location]);
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -29,8 +46,10 @@ function App() {
           saturation={1}
         />
       </div>
-      <div className="relative z-10">
+
+      <div className="relative z-10 h-auto">
         <NavBar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/doctors" element={<DoctorsPage />} />

@@ -1,8 +1,8 @@
 import {
-  HeartPulse, // Cardiology (أفضل من Heart)
-  Baby, // Pediatrics (تبقى مليحة)
-  Stethoscope, // Dentistry (أوضح بزاف من Smile)
-  Activity, // Gynecology (أفضل من Venus - يعطي medical feel)
+  HeartPulse,
+  Baby,
+  Stethoscope,
+  Activity,
   BrainCircuit,
 } from "lucide-react";
 function Speciality() {
@@ -14,7 +14,7 @@ function Speciality() {
     { name: "Neurology", icon: <BrainCircuit /> },
   ];
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="flex ml-15 items-center gap-2 m-10">
         <div className="w-10 h-[2px] bg-red-900 mt-0"></div>
         <h1 className="text-black text-2xl sm:text-3xl font-bold">
