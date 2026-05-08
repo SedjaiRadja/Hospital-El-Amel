@@ -11,7 +11,8 @@ import DoctorsPage from "./pages/doctors/DoctorsPage";
 import DoctorsDetails from "./pages/doctors/DoctorsDetails";
 import AppointmentPage from "./pages/appointment/AppointmentPage";
 import AboutPage from "./pages/about/AboutPage";
-
+import SignIn from "./components/SignIn";
+import Dashboard from "./components/Dashboard";
 function App() {
   const location = useLocation();
 
@@ -57,6 +58,8 @@ function App() {
           <Route path="/appointment" element={<AppointmentPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
     </div>

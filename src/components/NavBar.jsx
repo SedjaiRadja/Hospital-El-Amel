@@ -62,9 +62,7 @@ function NavBar() {
           <Link to="/" className="transition hover:text-slate-600">
             Home
           </Link>
-          <Link to="/services" className="transition hover:text-slate-600">
-            Services
-          </Link>
+
           <Link to="/doctors" className="transition hover:text-slate-600">
             Doctors
           </Link>
@@ -77,9 +75,14 @@ function NavBar() {
           <Link to="/contact" className="transition hover:text-slate-600">
             Contact
           </Link>
+          <Link
+            to="/signin"
+            className="text-blue-900 text-base sm:text-xl transition hover:text-blue-700"
+          >
+            sign in
+          </Link>
         </div>
       </div>
-
       <div className={`${isOpen ? "fixed" : "hidden"} inset-0 z-50 lg:hidden`}>
         <div
           className="absolute inset-0 bg-slate-900/40"
@@ -93,13 +96,7 @@ function NavBar() {
           >
             Home
           </Link>
-          <Link
-            to="/services"
-            onClick={() => setIsOpen(false)}
-            className="block rounded-xl px-4 py-3 text-slate-900 text-base font-medium transition hover:bg-slate-50"
-          >
-            Services
-          </Link>
+
           <Link
             to="/doctors"
             onClick={() => setIsOpen(false)}
@@ -127,6 +124,12 @@ function NavBar() {
             className="block rounded-xl px-4 py-3 text-slate-900 text-base font-medium transition hover:bg-slate-50"
           >
             Contact
+          </Link>
+          <Link
+            to="/signin"
+            className="block rounded-xl px-4 py-3 text-blue-900 text-base sm:text-xl transition hover:bg-slate-50 "
+          >
+            sign in
           </Link>
         </div>
       </div>
