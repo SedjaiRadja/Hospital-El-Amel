@@ -1,16 +1,21 @@
-# React + Vite
+# 🏥 Hospital El Amel
+A front-end hospital website developed as a study project based on MCD modeling. It simulates a hospital platform where users can explore doctors, specialties, and request appointments.
+🔗 Live Demo: https://hospital-el-amel.netlify.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Features
+View hospital specialties
+Browse doctors with details
+Appointment form (front-end only)
+Contact page
+Admin access (code protected) to view patients list
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
+React
+Tailwind CSS
+React Router
+React Bits (cursor/light effects)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚖️ Note
+Compliant with Algerian Law 18-07. Admin-only access is protected by a secure code.
+## 👨‍💻 Developer
+Sedjai Radja
