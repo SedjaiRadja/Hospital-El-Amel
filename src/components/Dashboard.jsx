@@ -10,7 +10,7 @@ function Dashboard() {
           return (
             <div
               key={patient.id}
-              className="bg-gradient-to-br from-sky-50 to-slate-50 p-4 rounded-xl mx-5 shadow-md text-center hover:shadow-[0_0_20px_#0ea5e9] transition duration-300"
+              className="cursor-target bg-gradient-to-br from-sky-50 to-slate-50 p-4 rounded-xl mx-5 shadow-md text-center hover:shadow-[0_0_20px_#0ea5e9] transition duration-300"
             >
               <h3 className="text-lg font-semibold text-black">
                 {patient.fullName}

@@ -7,7 +7,7 @@ function Doctors({ showButton = false }) {
         {doctors.map((doctor) => (
           <div
             key={doctor.id}
-            className="bg-gradient-to-br from-sky-50 to-slate-50 p-4 rounded-xl mx-5 shadow-md text-center hover:shadow-[0_0_20px_#0ea5e9] transition duration-300"
+            className="cursor-target bg-gradient-to-br from-sky-50 to-slate-50 p-4 rounded-xl mx-5 shadow-md text-center hover:shadow-[0_0_20px_#0ea5e9] transition duration-300"
           >
             <div className="flex justify-center items-center">
               <img

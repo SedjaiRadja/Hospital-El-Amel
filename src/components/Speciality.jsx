@@ -23,7 +23,7 @@ function Speciality() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6 p-6">
         {specialities.map((speciality) => (
-          <div className="bg-sky-50 rounded-xl shadow-md p-6 hover:shadow-[0_0_20px_#0ea5e9] transition flex flex-col">
+          <div className="cursor-target bg-sky-50 rounded-xl shadow-md p-6 hover:shadow-[0_0_20px_#0ea5e9] transition flex flex-col">
             <div className="text-blue-600 mb-3">{speciality.icon}</div>
             <h2 className="text-lg font-semibold mt-4">{speciality.name}</h2>
           </div>

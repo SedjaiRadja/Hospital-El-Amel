@@ -30,13 +30,13 @@ function Header() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 sm:mt-4 ">
           <Link to="/about">
-            <button className="cursor-pointer bg-teal-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-teal-600 transition text-sm sm:text-base font-medium shadow-md">
+            <button className="cursor-pointer cursor-target bg-teal-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-teal-600 transition text-sm sm:text-base font-medium shadow-md">
               About Us
             </button>
           </Link>
 
           <Link to="/appointment">
-            <button className="cursor-pointer bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-800 transition text-sm sm:text-base font-medium shadow-md">
+            <button className="cursor-pointer cursor-target bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-800 transition text-sm sm:text-base font-medium shadow-md">
               Book Appointment
             </button>
           </Link>

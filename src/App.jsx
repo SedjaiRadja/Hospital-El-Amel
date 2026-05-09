@@ -1,18 +1,23 @@
 import "./App.css";
 import { useEffect } from "react";
 import AOS from "aos";
+import TargetCursor from "./components/TargetCursor";
 import "aos/dist/aos.css";
 import { Routes, Route, useLocation } from "react-router-dom";
+
 import LightRays from "./components/LightRays";
 import NavBar from "./components/NavBar";
+
 import Home from "./pages/home/Home";
 import ContactPage from "./pages/contact/ContactPage";
 import DoctorsPage from "./pages/doctors/DoctorsPage";
 import DoctorsDetails from "./pages/doctors/DoctorsDetails";
 import AppointmentPage from "./pages/appointment/AppointmentPage";
 import AboutPage from "./pages/about/AboutPage";
+
 import SignIn from "./components/SignIn";
 import Dashboard from "./components/Dashboard";
+
 function App() {
   const location = useLocation();
 
@@ -30,6 +35,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
+      {/* Background Rays */}
       <div className="absolute inset-0 z-0">
         <LightRays
           raysOrigin="top-center"
@@ -48,6 +54,15 @@ function App() {
         />
       </div>
 
+      {/* Custom Cursor */}
+      <TargetCursor
+        spinDuration={3.3}
+        hideDefaultCursor={true}
+        parallaxOn={false}
+        hoverDuration={0.2}
+      />
+
+      {/* Main Content */}
       <div className="relative z-10 h-auto">
         <NavBar />
 

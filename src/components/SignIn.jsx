@@ -41,7 +41,7 @@ export default function Signin() {
           />
 
           <button
-            className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold 
+            className="cursor-target w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold 
                        hover:bg-indigo-700 hover:scale-105 
                        transition duration-300 shadow-md"
             onClick={handleLogin}

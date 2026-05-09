@@ -30,7 +30,7 @@ function Cards() {
         {headerCards.map((card) => (
           <div
             key={card.id}
-            className="bg-sky-50 rounded-xl shadow-md p-6 hover:shadow-[0_0_20px_#0ea5e9] transition flex flex-col "
+            className="cursor-target bg-sky-50 rounded-xl shadow-md p-6 hover:shadow-[0_0_20px_#0ea5e9] transition flex flex-col "
           >
             <div className="text-blue-600 mb-3">{iconMap[card.icon]}</div>
 
